@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">Flow</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="action_mute_notification">Mute Notification</string>
+    <string name="action_add_categories">Add Category</string>
+    <string name="action_set_budget">Set Budget</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_add">Add</string>
+    <string name="action_search">Search</string>
+    <string name="action_tips">Tips</string>
+
+    <!-- For AddPreset, AddSpendings, AddInflow Forms EditText-->
+    <string name="edit_text_name">Name</string>
+    <string name="edit_text_category">Category</string>
+    <string name="edit_text_amount">Amount</string>
+    <string name="edit_text_account">Account</string>
+    <string name="edit_text_labels">Labels</string>
+    <string name="edit_text_date">Date</string>
+    <string name="edit_text_time">Time</string>
+    <string name="edit_text_notes">Add Notes</string>
+
+    <!-- For AddPreset, AddSpendings, AddInflow Forms Buttons-->
+    <string name="button_add">Add</string>
+    <string name="button_save">Save</string>
+    <string name="button_set_interval">Set Interval</string>
+    <string name="reminder_daily">Daily</string>
+    <string name="reminder_weekly">Weekly</string>
+    <string name="reminder_monthly">Monthly</string>
+    <string name="reminder_custom">Custom</string>
+
+    <!-- For AddPreset, AddSpendings, AddInflow Forms TextView-->
+    <string name="text_view_more_details">More Details</string>
+
+    <!-- For Menu Items-->
+    <string name="menu_home">Home</string>
+    <string name="menu_preset">Preset</string>
+    <string name="menu_budgeting_plan">Budgeting Plan</string>
+    <string name="menu_trends">Trends</string>
+    <string name="menu_travel">Travel Mode</string>
+    <string name="menu_about">About</string>
+    <string name="menu_settings">Settings</string>
+
+    <!--DashBoard Text-->
+    <string name="total_balance">Total Balance</string>
+
+    <!--Preset Text-->
+    <string name="text_preset_spendings">Automate Spendings</string>
+    <string name="text_preset_income">Automate Income</string>
+    <string name="text_preset_categories">Add custom categories</string>
+    <string name="text_preset_labels">Add Labels</string>
+
+    <!-- Title Text For Toolbar-->
+    <string name="text_title_spendings">Spendings</string>
+    <string name="text_title_earnings">Earnings</string>
+    <string name="text_title_categories">Categories</string>
+    <string name="text_title_labels">Labels</string>
+    <string name="text_title_custom">Custom Repeat</string>
+
+
+    <!-- Preset Reminder -->
+    <string name="custom_start_date">Start Date</string>
+    <string name="custom_start_time">Start Time</string>
+    <string name="custom_end_date">End Date</string>
+    <string name="custom_end_time">End Time</string>
+
+    <!-- Title -->
+    <string name="custom_title_repeat">Every</string>
+
+    <!-- multiplier -->
+    <string name="constant_day">Day</string>
+    <string name="constant_month">Month</string>
+    <string name="constant_week">Week</string>
+
+    <string name="start_date">start_date</string>
+    <string name="end_date">end_date</string>
+    <string name="constant">constant</string>
+    <string name="multiplier">multiplier</string>
+
+    <!-- Dialog Buttons -->
+    <string name="set_budget">Set Budget</string>
+    <string name="cancel">Cancel</string>
+
+    <!--Content Description for ImageViews-->
+    <string name="contentDescriptionDate">DateImage</string>
+    <string name="contentDescriptionLogo">Logo</string>
+    <string name="send_notification">Send Notification?  </string>
+
+    <!--Start Page String-->
+    <string name="start_page_string_1">Welcome to Flow!</string>
+    <string name="start_page_string_2"> Lets get you started with this app.</string>
+    <string name="start_page_budget_1">Set budget to keep track of your spendings</string>
+    <string name="tips_1">For recurring transaction, Go to Menu > Preset and set your budget</string>
+    <string name="tips_2">For Budget Tracking and changes, Go to Menu > Budgeting and modify</string>
+    <string name="tips_3">To see your spending habits per month, Go to Menu > Trends</string>
+    <string name="string_budget_hint">Enter your budget</string>
+    <string name="hint_budget">Click Here to Set Budget</string>
+
+
+</resources>

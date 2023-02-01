@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="Food_and_beverage">Food &amp; Beverage</string>
+    <string name="Transport">Transport</string>
+    <string name="Shopping">Shopping</string>
+    <string name="Entertainment">Entertainment</string>
+    <string name="Travel">Travel</string>
+    <string name="Healthcare">Healthcare</string>
+    <string name="Education">Education</string>
+    <string name="Investment">Investment</string>
+    <string name="Bills">Bills</string>
+    <string name="Personal_care">Personal Care</string>
+    <string name="Maintenance">Maintenance</string>
+    <string name="Subscription">Subscription</string>
+    
+</resources>

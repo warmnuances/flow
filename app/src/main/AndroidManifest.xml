@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="under.hans.com.flow">
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <application xmlns:tools="http://schemas.android.com/tools"
+        tools:replace="android:allowBackup"
+        android:allowBackup="false"
+        android:icon="@drawable/flow"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/flow"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Home.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".BudgetPlan.CategoryBudget"/>
+
+        <activity android:name=".Forms.AddItemsForms"
+            android:windowSoftInputMode="stateVisible|adjustPan"/>
+
+        <activity android:name=".Preset.PresetOverview" />
+
+        <activity android:name=".BudgetPlan.BudgetingActivity"/>
+
+        <activity android:name=".Forms.AddPresetActivity"
+            android:windowSoftInputMode="stateVisible|adjustPan"/>
+
+        <activity android:name=".Trends.TrendActivity"/>
+
+        <activity android:name=".Search.SearchActivity"/>
+
+        <activity android:name=".Forms.AddCategoryActivity"/>
+
+        <activity android:name=".Start.StartActivity" />
+        <activity android:name=".About.AboutActivity" />
+
+        <!-- Content provider -->
+        <provider
+            android:authorities="under.hans.com.flow"
+            android:name="under.hans.com.flow.Data.SqlContentProvider">
+
+        </provider>
+
+        <service android:name=".AlarmService.ReminderAlarmService"
+            android:exported="false"/>
+
+        <receiver android:name=".BroadcastReceiver.AlarmBootReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

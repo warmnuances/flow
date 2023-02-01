@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:background="@color/colorGreyBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/rgReminder"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_margin="16dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="horizontal"
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:layout_height="32dp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:id="@+id/btDaily"
+                android:text="@string/reminder_daily"
+                android:checked="false"
+                />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:layout_height="32dp"
+                android:textSize="12sp"
+                android:id="@+id/btWeekly"
+                android:text="@string/reminder_weekly"
+                android:checked="false"
+                android:layout_weight="1"
+                />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:layout_height="32dp"
+                android:textSize="12sp"
+                android:id="@+id/btMonthly"
+                android:text="@string/reminder_monthly"
+                android:checked="false"
+                android:layout_weight="1"
+                />
+
+            <RadioButton
+                style="@style/RadioButtonStyle"
+                android:layout_height="32dp"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_selector"
+                android:id="@+id/btCustom"
+                android:text="@string/reminder_custom"
+                android:checked="false"/>
+
+        </RadioGroup>
+
+        <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/rgReminder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <include layout="@layout/add_snippet_top"/>
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+</merge>

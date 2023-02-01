@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorGreyBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/toolbar_main"/>
+            <include
+                layout="@layout/add_snippet_top"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="64dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="84dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <include
+                    android:layout_marginTop="64dp"
+                    layout="@layout/add_forms_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <Button
+        android:layout_gravity="bottom"
+        android:id="@+id/btSave"
+        style="@style/SaveButtonStyle"
+        android:elevation="8dp"
+        android:text="@string/button_save"/>
+
+</android.support.design.widget.CoordinatorLayout>

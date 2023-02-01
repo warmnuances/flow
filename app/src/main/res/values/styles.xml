@@ -1,0 +1,226 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="drawerArrowStyle">@style/DrawerHamburgerStyle</item>
+        <item name="cardViewStyle">@style/CardView</item>
+    </style>
+
+
+
+
+    <style name="DrawerHamburgerStyle" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--Default Toolbar-->
+
+
+    <!-- EditText style for all -->
+    <style name="EditTextStyle" parent="@android:style/TextAppearance.Widget.EditText">
+        <item name="android:stateListAnimator">@drawable/edit_text_selector</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!--For Account and Date-->
+    <style name="EditTextStyle.Small" parent="EditTextStyle">
+        <item name="android:paddingStart">40dp</item>
+        <item name="background">@drawable/rounded_rectangles</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--For Account and Date-->
+    <style name="EditTextStyle.Counter" parent="EditTextStyle">
+        <item name="background">@drawable/rounded_rectangles</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--For normal entry-->
+    <style name="EditTextStyle.Normal" parent="EditTextStyle">
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--For Amount-->
+    <style name="EditTextStyle.Big" parent="EditTextStyle">
+        <item name="android:paddingStart">48dp</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--For Notes-->
+    <style name="EditTextStyle.Large" parent="EditTextStyle">
+        <item name="android:gravity">top</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">5</item>
+        <item name="android:layout_height">110dp</item>
+    </style>
+
+    <!--Dialog TextView-->
+    <style name="EditTextStyle.DialogContent" parent="EditTextStyle">
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/textDark</item>
+        <item name="android:elevation">8dp</item>
+    </style>
+
+
+    <style name="RadioButtonStyle" parent="@android:style/Widget.CompoundButton.RadioButton">
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@drawable/clicked_rectangle</item>
+        <item name="android:background">@drawable/radio_button_selector</item>
+        <item name="android:textColor">@drawable/text_color_selector</item>
+
+    </style>
+
+    <style name="SaveButtonStyle" parent="android:Widget.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_margin">16dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+
+    <style name="EditTextContainer" parent="Widget.Design.TextInputLayout">
+        <item name="android:background">@drawable/rounded_rectangles</item>
+        <item name="android:stateListAnimator">@drawable/edit_text_selector</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="ButtonMarginSpace" parent="android:Widget.Button">
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">bottom</item>
+    </style>
+
+    <!--Text Styles-->
+
+    <!--Toolbar Text -->
+    <style name="TextTitleStyle" parent="TextAppearance.AppCompat">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">@string/font_family_regular</item>
+    </style>
+
+    <style name="TextApple" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@string/font_family_regular</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <!--Timeline Name Text -->
+    <style name="TextLarge" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@string/font_family_light</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/textMain</item>
+    </style>
+
+    <!--Total Balance Text and PresetDue-->
+    <style name="TextSubtitle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@string/font_family_light</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textSub</item>
+    </style>
+
+    <!--Total Balance Text and PresetDue-->
+    <style name="TextContent" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@string/font_family_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textMain</item>
+    </style>
+
+    <!--Total Balance Text and PresetDue-->
+    <style name="TextMain" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@string/font_family_medium</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textDark</item>
+    </style>
+
+    <!--Total Balance Text and PresetDue-->
+    <style name="TextSmall" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@string/font_family_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/textLight</item>
+    </style>
+
+
+    <!--Total Balance Text -->
+    <style name="TextNormal" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@string/font_family_regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textSub</item>
+    </style>
+
+    <style name="TextBig" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@string/font_family_regular</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/textSub</item>
+    </style>
+
+    <!--Preset Text -->
+    <style name="TextXtraLarge" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@string/font_family_regular</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">@color/textMain</item>
+    </style>
+
+
+
+
+</resources>

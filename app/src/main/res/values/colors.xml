@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9b0493</color>
+    <color name="colorPrimaryMed">#4f068f</color>
+    <color name="colorPrimaryDark">#38068f</color>
+    <color name="colorAccent">#FF9912</color>
+    <color name="colorAccentSecondary">#FFd412</color>
+    <color name="colorAccentTertiary">#fffc12</color>
+
+    <!-- TextColor -->
+    <color name="colorGreyText">#181818</color>
+
+
+    <!--Border Colour -->
+    <color name="colorLightGreyBorder">#bfbfbf</color>
+
+    <!--CardView background-->
+    <color name="colorGreyBackground">#F1F1F1</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <!--Gradient Color-->
+    <color name="colorLightGreen">#A2D4AB</color>
+
+    <!-- timeline Color-->
+    <color name="greenIndicator">#71C471</color>
+    <color name="redIndicator">#ed3c36</color>
+
+    <!--Text Color-->
+    <color name="textGreen">#5A9C5A</color>
+    <color name="textRed">#be3833</color>
+
+    <!--Grey Text Hierarchy-->
+    <color name="textDark">#333333</color>
+    <color name="textMain">#444444</color>
+    <color name="textSub">#656565</color>
+    <color name="textLight">#969696 </color>
+
+    <!--Icon Color-->
+    <color name="iconDarkGrey">#101010</color>
+    <color name="iconGrey">#606060</color>
+
+    <!-- Complementary Grey-->
+    <color name="colorDarkerGrey">#4c5660</color>
+    <color name="colorLighterGrey">#505c68</color>
+    <color name="transparentGray">#5b4c5660</color>
+
+    <!--Forms background-->
+    <color name="formsGreyBackground">#EFF0F1</color>
+    <color name="formsGreyStroke">#505C68</color>
+
+    <!-- Reserve colour -->
+    <color name="seaLight">#71c4c4</color>
+    <color name="seaMedium">#40abab</color>
+    <color name="seaDark">#007c79</color>
+
+    <!--Alpha Colour-->
+    <color name="alphaPrimary">#DC9b0493</color>
+    <color name="alphaSecondary">#DC38068f</color>
+    
+    <!--Paper Colour-->
+    <color name="oldPaper">#F8ECC2</color>
+
+</resources>

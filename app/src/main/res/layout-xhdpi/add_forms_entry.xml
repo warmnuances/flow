@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rectangle_bg_forms"
+        android:padding="16dp">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/verticalGuideline"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <TextView
+            android:id="@+id/titleCategory"
+            style="@style/TextSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Category"
+            android:textSize="12sp"
+            android:textColor="@color/textDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/categoryRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="24dp"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nameContainer"
+            style="@style/EditTextContainer"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categoryRecyclerview">
+
+            <EditText
+                android:id="@+id/etName"
+                android:textSize="16sp"
+                style="@style/EditTextStyle.Normal"
+                android:hint="@string/edit_text_name"
+                android:inputType="textPersonName" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/contentDescriptionDate"
+            android:elevation="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/nameContainer"
+            app:layout_constraintStart_toStartOf="@+id/nameContainer"
+            app:layout_constraintTop_toTopOf="@+id/nameContainer"
+            app:srcCompat="@drawable/ic_name" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            style="@style/EditTextStyle.Small"
+            android:layout_width="130dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:paddingStart="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_rectangles"
+            android:hint="@string/edit_text_time"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameContainer"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:contentDescription="@string/contentDescriptionDate"
+            android:elevation="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTime"
+            app:layout_constraintStart_toStartOf="@+id/tvTime"
+            app:layout_constraintTop_toTopOf="@+id/tvTime"
+            app:srcCompat="@drawable/ic_time" />
+
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/EditTextStyle.Small"
+            android:textSize="14sp"
+            android:layout_width="130dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/rounded_rectangles"
+            android:hint="@string/edit_text_date"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameContainer"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:contentDescription="@string/contentDescriptionDate"
+            android:elevation="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDate"
+            app:layout_constraintEnd_toEndOf="@+id/tvDate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvDate"
+            app:layout_constraintTop_toTopOf="@+id/tvDate"
+            app:srcCompat="@drawable/ic_date" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</merge>
